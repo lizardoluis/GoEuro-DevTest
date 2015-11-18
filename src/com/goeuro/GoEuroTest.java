@@ -23,7 +23,7 @@ public class GoEuroTest {
 	public static void main(String[] args) {
 
 		// Check number of arguments form the command line
-		if (args.length != 1) {
+		if (args.length != 1 || args[0].isEmpty()) {
 			printMsgAndExit("Usage: java -jar GoEuroTest.jar \"CITY NAME\"");
 		}
 
