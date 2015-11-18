@@ -2,9 +2,9 @@
 
 GoEuro Java Developer Test
 
-Simple application that query GoEuro API and transform the response JSON data into a CSV file.
+Simple application that queries GoEuro API and transforms the response JSON data into a CSV file.
 
-More detailed description: https://github.com/goeuro/dev-test
+For more detailed description please access: https://github.com/goeuro/dev-test
 
 
 Usage
