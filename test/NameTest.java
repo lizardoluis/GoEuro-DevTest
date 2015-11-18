@@ -91,12 +91,16 @@ public class NameTest {
 		System.out.println();
 
 		// City names tests
+		cityNameTest("   Stuttgart   ");
+		
 		cityNameTest("Zella Mehlis");
 		cityNameTest("Zella%20Mehlis");
 
 		cityNameTest("Frankfurt");
 		cityNameTest("Frankfurt am Main");
 		cityNameTest("Frankfurt (Oder)");
+		
+		cityNameTest("Sulz am Neckar");
 
 		cityNameTest("Brand-Erbisdorf");
 

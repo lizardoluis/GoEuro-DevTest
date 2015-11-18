@@ -70,13 +70,14 @@ public class LocationRequestManager implements LocationRequestService {
 
 			// Avoid unsafe characters in the city name and also substitutes
 			// possible spaces to %20.
-			String city = cityName.replaceAll(" ", "%20")
+			String cleanName = cityName.trim()
+					.replaceAll("\\ ", "%20")
 					.replaceAll("ü", "ue")
 					.replaceAll("ö", "oe")
                     .replaceAll("ä", "ae")
                     .replaceAll("ß", "ss");
 			
-			URL url = new URL(GOEURO_ENDPOINT + city);
+			URL url = new URL(GOEURO_ENDPOINT + cleanName);
 
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");
